@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Permanent+Marker&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', Helvetica;
+  }
+  
+body {
+    background: linear-gradient(
+      135deg,
+      #d4eefd, 
+      #c6e2f9,  
+      #e0f2f7   
+    );
+  }
+
+section {
+    position:relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+  }
+
+header {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+header .logo{
+    background-color: #4a90e2; 
+    color: #ffffff;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: 600;
+  }
+
+header .logo:hover{
+    background-color: #357ab7;
+    transition: 0.03s;
+  }
+
+header .navbar{
+    position: relative;
+    display: flex;
+  }
+
+header .navbar li{
+    list-style: none;
+    margin-left: 30px;
+  }
+
+header .navbar a{
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+  }
+header .navbar a:hover {
+  border-bottom: solid 5px #4a90e2;
+  padding: 5px;
+}
+
+.contenido{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.contenido .rotulodefinicion{
+  position: relative;
+  min-width: 600px;
+  text-align: center;
+}
+
+.contenido .rotulodefinicion h2{
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: #2c3e50;;
+}
+
+.contenido .rotulodefinicion h2 span{
+  background-color: #4a90e2; 
+  color: #ffffff;
+  padding:0 10px;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+.rotulodefinicion .rotulodefinicion p{
+  font-size: 1.8em;
+  line-height: 1.5;
+  color: #5d6d7e; 
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.contenido .rotulodefinicion a{
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: black;
+  align-items: center;
+  padding: 10px 20px;
+  margin-left: 30px;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  border: 2px solid #4a90e2;
+}
+
+.contenido .rotulodefinicion a:hover{
+  background-color: transparent;
+  color: #357ab7;
+  transition: 0.3s;
+}
+
+.contenido .imagenpersona {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: -20px;
+  z-index: -5;
+}
+
+.contenido .imagenpersona img{
+  height: 80vh;
+}
+
+.contenido .imagenpersona img:hover{
+  height: 80vh;
+}
+
+.titulacion{
+  align-items: center;
+  text-align: center;
+  margin-left: 30px;
+  padding: 10px 20px;
+}
+
+div .experienciaprofesional{
+  color: #5d6d7e;;
+  text-align: center;
+  justify-content: left;
+}
+
+.contenidoprofesional{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.contenidoprofesional .experienciaprofesional{
+  position: relative;
+  min-width: 600px;
+  text-align: justify;
+}
+
+.contenidoprofesional .experienciaprofesional h2{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color:#5d6d7e
+}
+
+.contenidoprofesional .experienciaprofesional h1{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #5d6d7e;
+  text-align: justify;
+}
+
+div .experiencialaboral{
+  color: black;
+}
+
+.contenidolaboral{
+  position:relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.contenidolaboral .experiencialaboral{
+  position: relative;
+  min-width: 600px;
+  text-align: justify;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+
+.contenidolaboral .experiencialaboral h2{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color:black;
+}
+
+.contenidoprofesional .experiencialaboral h1{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: black;
+  text-align: justify;
+}
+
+.imagencv{
+  width: 300px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 70px;
+  margin-left: 230px;
+  margin-bottom: 50px;
+  z-index: 1;
+}
+
+
+.rotuloform{
+  text-align: center;
+  color:#2c3e50;
+  text-decoration: none;
+}
+
+
+form{
+  color:#357ab7;
+  width: 600px;
+  height: 470px;
+  border: 5px outset #5d6d7e;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 16px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 90px;
+}
+
+fieldset{
+  border-radius: 10px;
+}
+
+legend{
+  font-family: "Gochi Hand", Verdana;
+  font-size: 20px;
+  color:#2c3e50;
+}
+
+textarea{
+  width: 590px;
+  height: 235px;
+}
+
+#botones{
+  color: #2c3e50;
+  border: 1px solid #2c3e50;
+  background-color: #c6e2f9;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  margin-left: 65px;
+  margin-bottom: 10px;
+}
+
+.navbarproyecto{
+  color: palegoldenrod;
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.navbarproyecto > li{
+  list-style: none;
+  float: left;
+}
+
+.navbarproyecto ul{
+  list-style: none;
+}
+
+.navbarproyecto li a{
+  text-decoration: none;
+  color: #2c3e50;
+  padding: 10px 15px;
+  display: block;
+}
+
+.navbarproyecto li ul{
+  display: none;
+  position: absolute;
+  min-width: 150px;
+}
+
+.navbarproyecto li:hover > ul{
+  display: block;
+}
+
+.navbarproyecto li:hover a{
+  background-color: #357ab7;
+  transition: 0.3s;
+  border-radius: 100px;
+}
+
+
+footer.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  z-index: 1000;
+  margin-top: 100px;
+}
+
+footer .copyright p {
+  margin: 5px 0;
+  color: #5d6d7e;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+footer .redessociales {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 5px 0;
+}
+
+footer .redessociales li a {
+  color: #5d6d7e;
+  font-size: 1.8em;
+  transition: 0.3s;
+}
+
+footer .redessociales li a:hover {
+  color: #357ab7;
+}
+
+/*Responsive*/
+@media (min-width: 577px) and (max-width: 992px) {
+  .contenidoprofesional {
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenidoprofesional .experienciaprofesional,
+  .contenidoprofesional .experiencialaboral {
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    display: block;
+  }
+
+  .imagencv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    z-index: 1; 
+  }
+
+  .imagencv img {
+    width: 60%;
+    height: auto;
+    margin-top: 200px;
+    max-height: 400px;
+    margin-right: 400px;
+  }
+
+  section {
+    padding: 70px 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    position: static;
+    padding: 30px 50px;
+  }
+
+  header .navbar li {
+    margin-left: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenido {
+    flex-direction: column;
+  }
+  .contenido .rotulodefinicion {
+    text-align: center;
+    padding-right: 0;
+  }
+  .contenido .imagenpersona {
+    justify-content: center;
+    padding-right: 0;
+    margin: 0;
+  }
+
+  .contenido .imagenpersona img {
+    height: 60vh;
+  }
+  .copyright {
+    position: static;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 30px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: -40px;
+  }
+
+  .copyright p {
+    margin: 40px 0;
+  }
+
+  .redesSociales {
+    flex-direction: row;
+    align-items: center;
+    position: static;
+  }
+  
+  .navbarproyecto{
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+ 
+}
+
